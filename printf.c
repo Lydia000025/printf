@@ -11,8 +11,8 @@
 int printIdentifiers(char next, va_list arg)
 {
 	int functsIndex;
-
-	identifierStruct functs[] = {
+	
+	struct identifierStruct functs[] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"d", print_int},
@@ -28,7 +28,7 @@ int printIdentifiers(char next, va_list arg)
 	for (functsIndex = 0; functs[functsIndex].indentifier != NULL; functsIndex++)
 	{
 		if (functs[functsIndex].indentifier[0] == next)
-			return (functs[functsIndex].printer(arg))
+			return (functs[functsIndex].printer(arg));
 	}
 	return (0);
 }
