@@ -12,7 +12,7 @@ int printIdentifiers(char next, va_list arg)
 {
 	int functsIndex;
 
-	identifierStruct functs[] = {
+	struct identifierStruct functs[] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"d", print_int},
