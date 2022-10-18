@@ -1,4 +1,4 @@
-1#include <unistd.h>
+#include <unistd.h>
 /**
  * _putchar - wtites char
  * @c: char
